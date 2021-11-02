@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".timkiem"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_search_24"/>
+
+        <!--Tao search -->
+        <AutoCompleteTextView
+            android:id="@+id/Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:hint="Tìm Kiếm"
+            android:textSize="20dp"
+            android:completionThreshold="1"
+            android:layout_span="2"
+            android:ems="10"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Thể Loại"
+        android:textSize="30dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="466dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/KinhDi"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:layout_gravity="left"
+                android:text="Kinh Dị"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/NgonTinh"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="Ngôn Tình"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintLeft_toRightOf="@+id/KinhDi"/>
+            <Button
+                android:id="@+id/Ma"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Ma"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/KinhDi"/>
+            <Button
+                android:id="@+id/TrinhTham"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="Trinh Tham"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintLeft_toRightOf="@+id/Ma"
+                app:layout_constraintTop_toBottomOf="@+id/NgonTinh"/>
+            <Button
+                android:id="@+id/KHVT"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Khoa Học Viễn Tưởng"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/Ma"/>
+            <Button
+                android:id="@+id/MuoiTamCong"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="18+"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintLeft_toRightOf="@+id/KHVT"
+                app:layout_constraintTop_toBottomOf="@+id/TrinhTham"/>
+            <Button
+                android:id="@+id/ThanThoai"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Thần Thoại"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/KHVT"/>
+            <Button
+                android:id="@+id/TienHiep"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="Tiên Hiệp"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintLeft_toRightOf="@+id/ThanThoai"
+                app:layout_constraintTop_toBottomOf="@+id/MuoiTamCong"/>
+            <Button
+                android:id="@+id/CoTich"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Cổ Tích"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@+id/ThanThoai"/>
+            <Button
+                android:id="@+id/LGBT"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginLeft="20dp"
+                android:text="LGBTQ+"
+                android:fontFamily="monospace"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintLeft_toRightOf="@+id/CoTich"
+                app:layout_constraintTop_toBottomOf="@+id/TienHiep"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Bottom_Navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconSize="30dp"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/navigation_menu" />
+</LinearLayout>

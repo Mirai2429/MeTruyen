@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Giới Thiệu"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Chào mừng đến với Mê Truyện, nơi bạn có thể:"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="- Đọc những câu chuyện mà bạn thích"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:text="- Đăng những câu chuyện do bạn viết"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="- Giao lưu, trao đổi với những người cùng sở thích với bạn"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Hãy bấm nút Đăng Nhập/Đăng Kí ở bên dưới để bắt đầu câu chuyện của bạn"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <!--Tao Dang Nhap-->
+    <Button
+        android:id="@+id/btnSignInID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:height="40dp"
+        android:backgroundTint="#FF9052"
+        android:gravity="center"
+        android:text="Đăng Nhập/Đăng Kí"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+</LinearLayout>

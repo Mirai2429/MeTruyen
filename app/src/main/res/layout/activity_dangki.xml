@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".dangki">
+
+    <!--Tao email dang ki-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DangKiEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao ten dang nhap-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TenDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên đăng nhập"
+            android:inputType="text"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao mat khau-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/MatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao nhap lai mat khau-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NhapLaiMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:passwordToggleEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao ngay sinh-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày sinh"
+            android:inputType="date"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao gioi tinh-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/GioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giới tính"
+            android:inputType="text"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao SDT-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Tao hoan thanh-->
+    <Button
+        android:id="@+id/HoanThanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#FF9052"
+        android:gravity="center"
+        android:text="HOÀN THÀNH"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</LinearLayout>
