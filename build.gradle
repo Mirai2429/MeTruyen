@@ -7,10 +7,11 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.3'
-        classpath 'com.huawei.agconnect:agcp:1.5.2.300'
+        classpath 'com.huawei.agconnect:agcp:1.6.0.300'
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+

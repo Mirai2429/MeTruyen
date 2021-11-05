@@ -7,16 +7,21 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.22179487179487178" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.22179487179487178" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21561181434599155" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/drawable/khung.xml" value="0.21837606837606838" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/drawable/solid.xml" value="0.22179487179487178" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/drawable/white_background.xml" value="0.22179487179487178" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_account.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_add_truyen.xml" value="0.20253164556962025" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_create_story.xml" value="0.20253164556962025" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_create_story.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_create_story2.xml" value="0.20854700854700856" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_create_story3.xml" value="0.20854700854700856" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_create_story_final.xml" value="0.20253164556962025" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_create_story_final.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_dangki.xml" value="0.20854700854700856" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_defined.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_home.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_login.xml" value="0.18055555555555555" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_main.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_qrcode.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_read_story.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/layout/activity_timkiem.xml" value="0.20253164556962025" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/MeTruyen/app/src/main/res/menu/navigation_menu.xml" value="0.20854700854700856" />

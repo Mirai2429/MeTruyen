@@ -42,7 +42,10 @@ public class home extends AppCompatActivity {
                     //case R.id.light:
 
                     //Nut tai khoan
-                    //case R.id.acc:
+                    case R.id.acc:
+                        startActivity(new Intent(getApplicationContext(),Account.class));
+                        overridePendingTransition(0,0);
+                        return true;
 
                     //Nut cai dat
                     //case R.id.set:

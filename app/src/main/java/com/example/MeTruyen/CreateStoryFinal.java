@@ -32,7 +32,11 @@ public class CreateStoryFinal extends AppCompatActivity {
                         return true;
 
                     //case R.id.light:
-                    //case R.id.acc:
+
+                    case R.id.acc:
+                        startActivity(new Intent(getApplicationContext(),Account.class));
+                        overridePendingTransition(0,0);
+                        return true;
                     //case R.id.set:
                 }
                 return false;
