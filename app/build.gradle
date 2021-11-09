@@ -37,7 +37,6 @@ android {
 dependencies {
     ext.JUNIT_VERSION = '4.12'
     ext.ESPRESSO_VERSION = '2.2.2'
-
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'

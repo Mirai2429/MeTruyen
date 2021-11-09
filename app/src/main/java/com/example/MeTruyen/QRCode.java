@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -19,6 +20,7 @@ import com.journeyapps.barcodescanner.BarcodeEncoder;
 public class QRCode extends AppCompatActivity {
     EditText EditText;
     Button Tao;
+    ImageButton Back;
     ImageView QRCodeImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class QRCode extends AppCompatActivity {
         setContentView(R.layout.activity_qrcode);
         EditText = findViewById(R.id.EditText);
         Tao = findViewById(R.id.Tao);
+        Back = findViewById(R.id.Back);
         QRCodeImage = findViewById(R.id.QRCodeImage);
         Tao.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +42,14 @@ public class QRCode extends AppCompatActivity {
                 } catch (Exception e){
                     e.printStackTrace();
                 }
+            }
+        });
+
+        Back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(QRCode.this, Account.class);
+                startActivity(intent);
             }
         });
 

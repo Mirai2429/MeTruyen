@@ -122,6 +122,7 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
         switch (view.getId()) {
             case R.id.btn_Signout:
                     signOut();
+                    startActivity(new Intent(Account.this, login.class));
                     break;
 
             //case R.id.imgView_photo:

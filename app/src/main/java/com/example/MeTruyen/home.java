@@ -10,7 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class home extends AppCompatActivity {
@@ -22,6 +21,7 @@ public class home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Search = findViewById(R.id.Search);
         Truyen1 = findViewById(R.id.Truyen1);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.Bottom_Navigation);
         bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
