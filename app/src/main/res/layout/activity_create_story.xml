@@ -89,6 +89,7 @@
                     android:textSize="15dp"
                     android:textStyle="bold"/>
                 <EditText
+                    android:id="@+id/editTieuDeTruyen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -100,6 +101,7 @@
                     android:textSize="15dp"
                     android:textStyle="bold"/>
                 <EditText
+                    android:id="@+id/editMoTaTruyen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -111,6 +113,7 @@
                     android:textSize="15dp"
                     android:textStyle="bold"/>
                 <EditText
+                    android:id="@+id/editTheLoai"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -123,6 +126,7 @@
                     android:textSize="15dp"
                     android:textStyle="bold"/>
                 <EditText
+                    android:id="@+id/editTenPhanTruyen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -135,6 +139,7 @@
                     android:textSize="15dp"
                     android:textStyle="bold"/>
                 <EditText
+                    android:id="@+id/editNoiDung"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </LinearLayout>

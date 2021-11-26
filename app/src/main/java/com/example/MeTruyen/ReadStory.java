@@ -34,12 +34,20 @@ public class ReadStory extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
 
-                    //case R.id.light:
+                    case R.id.light:
+                        startActivity(new Intent(getApplicationContext(),MyStory.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
                     case R.id.acc:
                         startActivity(new Intent(getApplicationContext(),Account.class));
                         overridePendingTransition(0,0);
                         return true;
-                    //case R.id.set:
+
+                    case R.id.set:
+                        startActivity(new Intent(getApplicationContext(),Setting.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return false;
             }

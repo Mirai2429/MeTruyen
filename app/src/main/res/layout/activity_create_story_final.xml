@@ -97,10 +97,10 @@
                     android:hint="Tiêu đề truyện"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/viewTieuDeTruyen"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:id="@+id/MoTaTruyen"
@@ -110,10 +110,10 @@
                     android:hint="Mô tả truyện"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/viewMoTaTruyen"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:id="@+id/TheLoai"
@@ -123,10 +123,10 @@
                     android:hint="Thể loại"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/viewTheLoai"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:id="@+id/TenPhanTruyen"
@@ -136,10 +136,10 @@
                     android:hint="Tên phần truyện"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/viewTenPhanTruyen"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:id="@+id/NoiDung"
@@ -149,10 +149,10 @@
                     android:hint="Nội dung truyện"
                     android:textSize="20dp"
                     android:textStyle="bold"/>
-                <com.google.android.material.textfield.TextInputLayout
+                <TextView
+                    android:id="@+id/viewNoiDung"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>

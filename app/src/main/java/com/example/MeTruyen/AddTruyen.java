@@ -1,9 +1,6 @@
 package com.example.MeTruyen;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 public class AddTruyen extends AppCompatActivity {
 
     @Override
