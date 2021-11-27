@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1078332458491",
+    "project_id": "appm-aefc4",
+    "storage_bucket": "appm-aefc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078332458491:android:1d418855ffe396e591375e",
+        "android_client_info": {
+          "package_name": "com.example.MeTruyen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078332458491-a3kj6p90ejcnhfg4m5irt5virrn4kjhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.MeTruyen",
+            "certificate_hash": "b6c887fe9997f2f319ca8fa522a190996cfba428"
+          }
+        },
+        {
+          "client_id": "1078332458491-d8q8phokjdd084e9lilkhjhmlom2c6o0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRjHJTT20kE5U74kMVkU_CnM1QU6ggzNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078332458491-d8q8phokjdd084e9lilkhjhmlom2c6o0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

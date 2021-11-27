@@ -20,6 +20,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity
+            android:name=".login"
+            android:exported="true" />
+        <activity
+            android:name=".DangNhap"
+            android:exported="true" />
+        <activity
             android:name=".MyStory"
             android:exported="true" />
         <activity
@@ -53,7 +59,7 @@
             android:name=".dangki"
             android:exported="true" />
         <activity
-            android:name=".login"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

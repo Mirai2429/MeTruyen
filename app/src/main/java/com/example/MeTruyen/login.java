@@ -1,6 +1,7 @@
 package com.example.MeTruyen;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.huawei.hms.support.account.result.AuthAccount;
 import com.huawei.hms.support.account.service.AccountAuthService;
 public class login extends AppCompatActivity {
     private static final String TAG = "MeTruyen";
+    private Button DangKi, DangNhap;
     AccountAuthParams authParams;
     AccountAuthService authService;
     private Button btnSignInID;
@@ -27,14 +29,37 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         btnSignInID = findViewById(R.id.btnSignInID);
+        DangNhap = findViewById(R.id.btnDangNhap);
+        DangKi = findViewById(R.id.btnDangKi);
+
         btnSignInID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signInId();
             }
         });
+        DangNhap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDangNhap();
+            }
+        });
+        DangKi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDangKi();
+            }
+        });
     }
 
+    public void openDangNhap(){
+        Intent intent = new Intent(login.this, DangNhap.class);
+        startActivity(intent);
+    }
+    public void openDangKi(){
+        Intent intent = new Intent(login.this, dangki.class);
+        startActivity(intent);
+    }
     public void openHome(){
         Intent intent = new Intent(login.this, home.class);
         startActivity(intent);
@@ -64,4 +89,6 @@ public class login extends AppCompatActivity {
         authService= AccountAuthManager.getService(login.this,authParams);
         signInIDResult.launch(authService.getSignInIntent());
     }
+
+
 }

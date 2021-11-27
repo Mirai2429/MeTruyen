@@ -3,13 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".dangki">
+    tools:context=".DangNhap">
 
-    <!--Tao email dang ki-->
     <EditText
-        android:id="@+id/DangKiEmail"
+        android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -20,7 +19,6 @@
         android:imeOptions="actionNext"
         android:textSize="20dp" />
 
-    <!--Tao mat khau-->
     <EditText
         android:id="@+id/MatKhau"
         android:layout_width="match_parent"
@@ -32,18 +30,17 @@
         android:inputType="textPassword"
         android:textSize="20dp" />
 
-
-    <!--Tao hoan thanh-->
     <Button
-        android:id="@+id/HoanThanh"
+        android:id="@+id/DangNhap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:backgroundTint="#FF9052"
         android:gravity="center"
-        android:text="HOÀN THÀNH"
+        android:text="Đăng Nhập"
         android:textColor="@color/white"
         android:textSize="20dp" />
+
 </LinearLayout>
