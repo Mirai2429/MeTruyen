@@ -1,6 +1,8 @@
 package com.example.MeTruyen;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -22,6 +24,7 @@ public class dangki extends AppCompatActivity {
     private EditText Email, Password;
     private Button HoanThanh;
     private FirebaseAuth mAuth;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class dangki extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         Email = findViewById(R.id.DangKiEmail);
         Password = findViewById(R.id.MatKhau);
+        progressDialog = new ProgressDialog(this);
         HoanThanh = findViewById(R.id.HoanThanh);
         HoanThanh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,10 +44,12 @@ public class dangki extends AppCompatActivity {
     }
 
     private void signUpUser(String email, String password) {
+        progressDialog.show();
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
+                            progressDialog.dismiss();
                             if (task.isSuccessful()) {
                                 Toast.makeText(dangki.this, "Authentication successed.",
                                         Toast.LENGTH_SHORT).show();

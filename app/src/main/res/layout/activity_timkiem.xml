@@ -46,7 +46,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="466dp"
+        android:layout_height="490dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp">
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/KinhDi"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:layout_gravity="left"
@@ -64,7 +64,7 @@
                 tools:ignore="MissingConstraints" />
             <Button
                 android:id="@+id/NgonTinh"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:layout_marginLeft="20dp"
@@ -74,7 +74,7 @@
                 app:layout_constraintLeft_toRightOf="@+id/KinhDi"/>
             <Button
                 android:id="@+id/Ma"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:text="Ma"
@@ -83,7 +83,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/KinhDi"/>
             <Button
                 android:id="@+id/TrinhTham"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:layout_marginLeft="20dp"
@@ -94,7 +94,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/NgonTinh"/>
             <Button
                 android:id="@+id/KHVT"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:text="Khoa Học Viễn Tưởng"
@@ -103,7 +103,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/Ma"/>
             <Button
                 android:id="@+id/MuoiTamCong"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:layout_marginLeft="20dp"
@@ -114,7 +114,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/TrinhTham"/>
             <Button
                 android:id="@+id/ThanThoai"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:text="Thần Thoại"
@@ -123,7 +123,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/KHVT"/>
             <Button
                 android:id="@+id/TienHiep"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:layout_marginLeft="20dp"
@@ -134,7 +134,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/MuoiTamCong"/>
             <Button
                 android:id="@+id/CoTich"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:text="Cổ Tích"
@@ -143,7 +143,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/ThanThoai"/>
             <Button
                 android:id="@+id/LGBT"
-                android:layout_width="150dp"
+                android:layout_width="170dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/black"
                 android:layout_marginLeft="20dp"

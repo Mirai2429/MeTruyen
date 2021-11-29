@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -14,24 +15,16 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.huawei.hmf.tasks.OnFailureListener;
-import com.huawei.hmf.tasks.OnSuccessListener;
-import com.huawei.hmf.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.huawei.hms.ml.scan.HmsScan;
-import com.huawei.hms.support.account.AccountAuthManager;
 import com.huawei.hms.support.account.request.AccountAuthParams;
-import com.huawei.hms.support.account.result.AuthAccount;
 import com.huawei.hms.support.account.service.AccountAuthService;
-import com.huawei.hms.support.hwid.HuaweiIdAuthManager;
-import com.huawei.hms.support.hwid.request.HuaweiIdAuthParams;
-import com.huawei.hms.support.hwid.result.AuthHuaweiId;
-import com.huawei.hms.support.hwid.result.HuaweiIdAuthResult;
-import com.huawei.hms.support.hwid.service.HuaweiIdAuthService;
-import com.squareup.picasso.Picasso;
 
 public class Account extends AppCompatActivity implements View.OnClickListener{
-
     private static final String TAG = "MeTruyen";
     public static final int DEFINED_CODE = 222;
     private static final int REQUEST_CODE_SCAN = 0X01;
@@ -39,13 +32,13 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
     private AccountAuthParams mAuthParam;
     ImageView imgViewPhoto;
     TextView txtViewUid;
-    TextView txtViewNickName;
+    TextView txtViewName;
     TextView txtViewEmail;
-    TextView txtViewPhone;
     Button btnSignOut;
-    Button btnUpdateName;
+    Button btnEditProfile;
     Button btnScan;
     Button btnQRCode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,51 +100,57 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
             }
         });
     }
+
     private void initView() {
         btnSignOut = findViewById(R.id.btn_Signout);
         btnSignOut.setOnClickListener(this);
+
         imgViewPhoto = findViewById(R.id.imgView_photo);
-        imgViewPhoto.setOnClickListener(this);
+
         txtViewUid = findViewById(R.id.txtView_uid);
-        txtViewNickName = findViewById(R.id.txtView_NickName);
+
+        txtViewName = findViewById(R.id.txtView_Name);
+
         txtViewEmail = findViewById(R.id.txtView_email);
-        txtViewPhone = findViewById(R.id.txtView_phone);
-        btnUpdateName = findViewById(R.id.btn_update_name);
-        btnUpdateName.setOnClickListener(this);
+
+        btnEditProfile = findViewById(R.id.btn_EditProfile);
+        btnEditProfile.setOnClickListener(this);
     }
 
     private void showUserInfo() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            String uid = user.getUid();
+            String name = user.getDisplayName();
+            String email = user.getEmail();
+            Uri photoUrl = user.getPhotoUrl();
 
+                if (name == null) {
+                    txtViewName.setVisibility(View.GONE);
+                }
+                else {
+                    txtViewName.setVisibility(View.VISIBLE);
+                    txtViewName.setText(name);
+                }
+
+            txtViewUid.setText(uid);
+            txtViewEmail.setText(email);
+            Glide.with(this).load(photoUrl).error(R.drawable.acc).into(imgViewPhoto);
+        }
     }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_Signout:
-                    signOut();
+                    FirebaseAuth.getInstance().signOut();
                     startActivity(new Intent(Account.this, login.class));
+                    finish();
                     break;
 
-            //case R.id.imgView_photo:
-            //    break;
-
-            //case R.id.btn_update_name:
+            //case R.id.btn_EditProfile:
             //    break;
         }
-    }
-
-    private void signOut() {
-        Task<Void> signOutTask = mAuthManager.signOut();
-        signOutTask.addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void aVoid) {
-                Log.i(TAG, "signOut Success");
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(Exception e) {
-                Log.i(TAG, "signOut fail");
-            }
-        });
     }
 
 
@@ -178,11 +177,11 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        // receive result after your activity finished scanning
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode != RESULT_OK || data == null) {
             return;
         }
+
         if (requestCode == REQUEST_CODE_SCAN) {
             HmsScan hmsScan = data.getParcelableExtra(DefinedActivity.SCAN_RESULT);
             if (hmsScan != null && !TextUtils.isEmpty(hmsScan.getOriginalValue())) {

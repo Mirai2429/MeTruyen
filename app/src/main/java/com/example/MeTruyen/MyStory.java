@@ -20,7 +20,7 @@ public class MyStory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_story);
         BottomNavigationView bottomNavigationView = findViewById(R.id.Bottom_Navigation);
-        bottomNavigationView.setSelectedItemId(R.id.pen);
+        bottomNavigationView.setSelectedItemId(R.id.light);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -31,11 +31,11 @@ public class MyStory extends AppCompatActivity {
                         return true;
 
                     case R.id.pen:
+                        startActivity(new Intent(getApplicationContext(),CreateStory.class));
+                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.light:
-                        startActivity(new Intent(getApplicationContext(),MyStory.class));
-                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.acc:
