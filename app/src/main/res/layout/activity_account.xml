@@ -117,9 +117,17 @@
             android:minWidth="120dp"
             android:textColor="@android:color/black"
             android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_EditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Chỉnh Sửa Name"
+            android:textSize="12dp"/>
     </LinearLayout>
-
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -146,15 +154,6 @@
             android:textSize="12dp" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_EditProfile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:text="Chỉnh Sửa Thông Tin" />
 
     <Button
         android:id="@+id/btn_Signout"
@@ -170,7 +169,7 @@
         android:id="@+id/Bottom_Navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="195dp"
+        android:layout_marginTop="240dp"
         app:itemIconSize="30dp"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/navigation_menu" />

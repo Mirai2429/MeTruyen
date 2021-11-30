@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:text="Chỉnh Sửa Thông tin"
+            android:text="Chỉnh Sửa Name"
             android:textColor="@color/white"
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -55,15 +55,6 @@
         android:layout_marginTop="10dp"
         android:hint="Name"/>
 
-    <EditText
-        android:id="@+id/EditEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"
-        android:hint="Email"/>
-
     <Button
         android:id="@+id/CapNhat"
         android:layout_width="match_parent"
@@ -79,7 +70,7 @@
         android:id="@+id/Bottom_Navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="235dp"
+        android:layout_marginTop="290dp"
         app:itemIconSize="30dp"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/navigation_menu" />

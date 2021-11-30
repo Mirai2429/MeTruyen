@@ -99,6 +99,14 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
                 startActivity(intent);
             }
         });
+
+        btnEditProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Account.this, EditProfile.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {
@@ -117,22 +125,20 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
         btnEditProfile.setOnClickListener(this);
     }
 
-    private void showUserInfo() {
+    public void showUserInfo() {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             String uid = user.getUid();
             String name = user.getDisplayName();
             String email = user.getEmail();
             Uri photoUrl = user.getPhotoUrl();
-
-                if (name == null) {
-                    txtViewName.setVisibility(View.GONE);
-                }
-                else {
-                    txtViewName.setVisibility(View.VISIBLE);
-                    txtViewName.setText(name);
-                }
-
+            if (name == null) {
+                txtViewName.setVisibility(View.GONE);
+            }
+            else {
+                txtViewName.setVisibility(View.VISIBLE);
+                txtViewName.setText(name);
+            }
             txtViewUid.setText(uid);
             txtViewEmail.setText(email);
             Glide.with(this).load(photoUrl).error(R.drawable.acc).into(imgViewPhoto);
