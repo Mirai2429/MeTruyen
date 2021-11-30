@@ -1,19 +1,20 @@
 package com.example.MeTruyen;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class timkiem extends AppCompatActivity {
-    AutoCompleteTextView Search;
-    final static String [] truyen = {"Dragon ball", "Conan", "Doraemon", "One pierce", "X-men", "Spider man"};
-    ArrayAdapter<String> adapter;
+    private SearchView Search;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +53,15 @@ public class timkiem extends AppCompatActivity {
                 return false;
             }
         });
+
         Search = findViewById(R.id.Search);
-        adapter = new ArrayAdapter<String>(timkiem.this, android.R.layout.simple_dropdown_item_1line,truyen);
-        Search.setAdapter(adapter);
+        Search.setOnSearchClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Search.class));
+            }
+        });
+
     }
+
 }

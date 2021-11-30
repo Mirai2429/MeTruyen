@@ -34,7 +34,6 @@ public class EditProfile extends AppCompatActivity {
     private Button CapNhat;
     private ImageView Avatar;
     private Uri mUri;
-    private Account mAccount;
     private ProgressDialog progressDialog;
 
     @Override
@@ -46,7 +45,6 @@ public class EditProfile extends AppCompatActivity {
         EditName = findViewById(R.id.EditName);
         CapNhat = findViewById(R.id.CapNhat);
         progressDialog = new ProgressDialog(this);
-        mAccount = (Account) getApplicationContext();
         setUserInfo();
         BottomNavigationView bottomNavigationView = findViewById(R.id.Bottom_Navigation);
         bottomNavigationView.setSelectedItemId(R.id.acc);
@@ -129,7 +127,6 @@ public class EditProfile extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             Toast.makeText(EditProfile.this, "Update profile successed.",
                                     Toast.LENGTH_SHORT).show();
-                            mAccount.showUserInfo();
                         }
                     }
                 });

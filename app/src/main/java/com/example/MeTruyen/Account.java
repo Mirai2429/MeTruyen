@@ -100,13 +100,6 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
             }
         });
 
-        btnEditProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Account.this, EditProfile.class);
-                startActivity(intent);
-            }
-        });
     }
 
     private void initView() {
@@ -154,11 +147,12 @@ public class Account extends AppCompatActivity implements View.OnClickListener{
                     finish();
                     break;
 
-            //case R.id.btn_EditProfile:
-            //    break;
+            case R.id.btn_EditProfile:
+                    Intent intent = new Intent(Account.this, EditProfile.class);
+                    startActivity(intent);
+                    break;
         }
     }
-
 
     //Scan kit
     public void newViewBtnClick() {

@@ -23,31 +23,17 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
 
         <TextView
-            android:id="@+id/TenTruyen"
-            android:layout_width="wrap_content"
+            android:id="@+id/ViewTenTruyen"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:text="Tên Truyện"
+            android:layout_marginStart="52dp"
             android:textColor="@color/white"
             android:textSize="15dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toRightOf="@id/Back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/TacGia"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="Tác Giả"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            app:layout_constraintEnd_toStartOf="@+id/TheoDoi"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/Back"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintVertical_bias="0.457" />
 
         <Button
             android:id="@+id/TheoDoi"
@@ -60,7 +46,7 @@
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintLeft_toRightOf="@+id/TenTruyen"
+            app:layout_constraintLeft_toRightOf="@+id/ViewTenTruyen"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -78,21 +64,17 @@
                 android:id="@+id/TieuDeTruyen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tiêu đề truyện"
+                android:text="Chap 1:"
                 android:textSize="20dp"/>
 
             <TextView
                 android:id="@+id/NoiDung"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nội dung Nội dung Nội dung Nội dung Nội dung
-                Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung
-                Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung
-                Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung
-                Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung
-                Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung
-                Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung Nội dung"
+                android:text="Khi Alex, Chase, Gert, Karolina, Molly và Nico chứng kiến cha mẹ của họ hy sinh một cô gái trong một buổi lễ huyền bí, cả nhóm bỏ chạy. Khi câu chuyện tiến triển, những đứa trẻ học về di sản và khả năng của mình, đồng thời ăn cắp tài nguyên từ cha mẹ của chúng, bao gồm găng tay của tương lai, một con khủng long và một Quyền trượng thần bí. Bằng cách sử dụng những nguồn lực này, họ xoay sở để loại bỏ cha mẹ của họ, những người được các nhà hảo tâm của họ, Gibborim, giúp đỡ, khỏi bị giam giữ tội phạm ở Los Angeles.Alex, che giấu lòng trung thành thực sự của mình với cha mẹ, phản bội những người khác trong Runaways to the Pride; trong trận chiến cuối cùng với Pride, Alex bị thiêu rụi bởi Gibborim. Với việc Pride bị đánh bại, Nico trở thành thủ lĩnh trên thực tế, và những Runaways khác giờ thề sẽ ngăn chặn những kẻ xấu khác lấp đầy khoảng trống mà cha mẹ họ để lại. Khi một phiên bản cũ hơn của Gert thời gian du hành về hiện tại, cô cầu xin Runaways tìm một cậu bé tên là Victor Mancha và ngăn chặn cậu trước khi cậu lớn lên trở thành một nhân vật phản diện trong thời đại của cô có tên là Victorious. Anh ta phản bội cô và sau đó sát hại mọi anh hùng trên hành tinh. Đó là thời điểm cô ấy chết, nhưng Runaways quyết định thực hiện theo mong muốn của cô ấy. Runaways truy lùng Victor và phát hiện ra rằng cha đẻ thực sự của anh ta là Ultron, người đã tạo ra Victor như một đặc vụ ngủ yên cho Avengers. The Runaways đã phá vỡ kế hoạch này, nhưng Victor vẫn lo sợ rằng tương lai này có thể trở thành sự thật. Họ đưa Victor vào sau khi nhận ra rằng anh ấy đang ở cùng thuyền với họ. Một người ngoài hành tinh biến đổi hình dạng Skrull Xavin đến trái đất và yêu cầu Karolina rời đi cùng họ. Sau một cuộc đối đầu ngắn với Runaways, họ giải thích rằng Karolina là vị hôn thê của họ theo sự sắp đặt của cha mẹ và họ phải ra tay để ngăn chặn cuộc chiến kéo dài mười lăm năm giữa các chủng tộc của mình. Trong lễ cưới, một cuộc chiến nổ ra giữa hai chủng tộc và họ chỉ kịp trốn thoát trước khi Majesdane bị tiêu diệt. Họ quay trở lại Trái đất, nơi họ tham gia cùng đội và giúp giải cứu Molly cùng với những người còn lại trong Runaways khỏi New Pride. Ngay trước khi Runaways đánh bại một hóa thân mới của Pride và cha hồi sinh của Alex, Gertrude bị trọng thương. Trước khi vượt qua, cô ấy chuyển quyền điều khiển Old Lace cho Chase. Bên trong Nội chiến sự kiện chéo, Young Avengers đi đến Los Angeles để giúp Runaways chống lại các đặc vụ chính phủ và Flag-Smasher. Hai đội chạm trán với Noh-Varr, người làm việc cho S.H.I.E.L.D. và cố gắng bắt các thanh thiếu niên. Sau đó, Chase nảy ra một kế hoạch, mà không được sự đồng ý của các thành viên còn lại, hy sinh bản thân mình cho Gibborim, nhưng cả đội đã đến để cứu anh ta, điều này sau đó khiến Gibborim bị xóa sổ. Khi Runaways vô tình bị dịch chuyển thời gian vào năm 1907, họ gặp phải cha mẹ của Runaway Gertrude Yorke đã qua đời. Sau khi đánh bại Yorkes và cuộc chiến băng đảng chết người, kẻ thao túng thực vật Klara Prast tham gia Runaways khi họ trở lại hiện tại. Khi trở về từ năm 1907, Runaways thấy mình đang ở New York để giúp đỡ Young Avengers trong Cuộc xâm lược bí mật, nơi Skrull Armada đã xâm nhập để tìm kiếm Hulkling. Xavin giả vờ trung thành với Skrulls để bảo vệ bạn bè của cô trong một cuộc tấn công, nhưng giúp họ rút lui khỏi trận chiến. Runaways bị săn đuổi bởi một số binh lính Majesdanian còn lại với mong muốn bắt Karolina vì những vấn đề gây ra trên hành tinh của họ; Tuy nhiên, trong một loạt các sự kiện, Xavin biến đổi hình dạng thành Karolina và rời đi với các Majesdanians. Runaways cũng ngăn chặn đại dịch thây ma ở Los Angeles. Molly cũng đến thăm các X-Men ở San Francisco và hòa giải với Wolverine. Cả đội bị tấn công khi đang ở trong ngôi nhà trên bãi biển của cha mẹ Chase. Old Lace bị thương nặng khi cứu Klara, người có sức mạnh tạo ra những tán lá để giữ cho ngôi nhà không bị đổ nát, nhưng vẫn bẫy mọi người. Một người đàn ông được cho là chú của Chase xuất hiện và cố gắng giúp đỡ, nhưng bị quân đội theo dõi. Cả nhóm bỏ chạy, nhưng Chase tách ra và bị thương nặng trong một vụ tai nạn xe hơi khi đang chạy băng qua đường đuổi theo một hình bóng gợi nhớ đến Gertrude. Những người Runaways tái hợp sau đó đã thành lập một liên minh không dễ dàng với Daken để hạ gục Marcus Roston, một tên tội phạm siêu cường có quan hệ với Pride. Sau đó, họ lại xuất hiện tại Học viện Avengers yêu cầu giúp đỡ trong việc tìm Old Lace, người đã bị đày vào một chiều không gian bí mật. Runaways tan rã một phần sau đó, với việc Victor tham gia Avengers A.I của Hank Pym. trong khi Nico và Chase đều bị Arcade bắt và buộc phải chiến đấu cho cuộc sống của họ trong Đấu trường Avengers, sau đó tham gia cùng các siêu anh hùng tuổi teen khác sống sót sau các trò chơi của Arcade trong Avengers Undercover. Sau cái chết tàn bạo của Nico, sự phân xác và sự phục sinh sau đó trong Đấu trường Avengers, cô ấy bị chấn thương và gặp khó khăn trong việc hòa nhập trở lại với Runaways. Chase có vẻ ổn bởi những trải nghiệm của anh ấy trong MurderWorld và tận hưởng danh tiếng mới tìm thấy của mình. Chase quay lại chăm sóc Karolina, Molly và Klara. Đến cuối Avengers Undercover, tuy nhiên, Runaways dường như lại ở bên nhau. Một thời gian sau các sự kiện của Avengers Undercover, Nico gia nhập A-Force trước khi quay trở lại Los Angeles. Sau thời gian của Victor với Avengers A.I., anh được tuyển dụng để làm việc với Vision và chuyển đến sống cùng anh và gia đình ở DC trong The Vision (2015). Một thời gian sau, Chase sử dụng cỗ máy thời gian Yorkes để quay ngược thời gian và cứu Gert trước khi cô bị Geoffrey Wilder giết. Kế hoạch có hiệu quả một phần nhưng Gert vẫn bị thương nặng. Nico đã tìm cách chữa trị cho cô ấy và họ đã đi tìm kiếm các thành viên trong nhóm trước đây với hy vọng cải tổ. Karolina đã trở thành một sinh viên đại học, sống bằng tiền bản quyền của cha mẹ và có mối quan hệ với Lightspeed từ Power Pack, còn Molly thì đến sống với bà ngoại và học trung học cơ sở. Cả hai đều từ chối lời đề nghị gia nhập lại đội, nhưng Gert chấp nhận, trở thành em gái nuôi của Molly sống dưới sự cai trị của bà cô. Các mảnh của Victor Mancha đã được Avengers gửi cho Chase, và anh ta đã tìm cách phản ứng lại anh ta, từ đó kích hoạt chương trình Victorious nhưng không xây dựng lại hoàn toàn anh ta. Sau khi giải cứu Molly và Gert khỏi nhà của bà nội là nhà khoa học điên của cô ấy, cả nhóm đã cải tổ và bắt đầu sống trong một Nhà nghỉ Pride vô chủ dưới lòng đất, với Nico và Chase một cách kỳ diệu trở thành những người bảo vệ hợp pháp của Molly. Tình cảm nảy nở giữa Nico và Karolina và giữa Gert và Victor. Alex Wilder, xuất hiện trở lại để cảnh báo Runaways về một mối nguy hiểm sắp xảy ra dưới dạng Seed of the Gibborim, một bộ ba vị thần và hậu duệ của Gibborim mà cha mẹ của họ đã cố gắng triệu tập bằng một nghi lễ. Họ cố gắng để đội tiếp tục nghi lễ của gia đình họ, để lại một trong bộ ba - Gib - trông chừng họ. Vào ngày mà nghi lễ được cho là diễn ra, Gib đã phản bội Seed. Hai vị thần còn lại được gửi đến tương lai để ngăn chặn mối đe dọa của họ. Gib gia nhập đội trong khi Alex bị loại vì các đồng đội cũ của anh ấy không tin tưởng anh ấy. Họ được tuyển dụng để tham gia J-Team hồi sinh, được cấp trang phục và hỗ trợ để trở thành anh hùng chính thức. Tuy nhiên, Gert sau đó phát hiện ra rằng Doc Justice,
+                người đã giúp họ, chỉ đơn giản là cố gắng giữ cho một thương hiệu tiếp tục phát triển và có kế hoạch hy sinh Karolina để tăng xếp hạng của anh ấy, như anh ấy đã làm nhiều lần trước đó. Cả đội đã chiến đấu với Doc Justice và sau khi đánh bại hắn ta, định bỏ đi nhưng Old Lace đã giết Doc và hiến linh hồn của mình cho Gib."
                 android:textSize="15dp"/>
+
             <TextView
                 android:id="@+id/BinhLuan"
                 android:layout_width="match_parent"

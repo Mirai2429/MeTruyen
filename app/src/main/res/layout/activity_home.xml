@@ -74,6 +74,7 @@
                     android:src="@drawable/pic1"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen1"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -100,6 +101,7 @@
                     android:src="@drawable/pic2"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen2"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -126,6 +128,7 @@
                     android:src="@drawable/pic3"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen3"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -172,6 +175,7 @@
                     android:src="@drawable/pic4"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen4"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -197,6 +201,7 @@
                     android:scaleType="fitCenter"
                     android:src="@drawable/pic5" />
                 <TextView
+                    android:id="@+id/TenTruyen5"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -223,6 +228,7 @@
                     android:src="@drawable/pic6"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen6"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
@@ -250,6 +256,7 @@
                     android:src="@drawable/pic7"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen7"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
@@ -277,6 +284,7 @@
                     android:src="@drawable/pic8"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen8"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -304,6 +312,7 @@
                     android:src="@drawable/pic9"
                     android:scaleType="fitCenter"/>
                 <TextView
+                    android:id="@+id/TenTruyen9"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"

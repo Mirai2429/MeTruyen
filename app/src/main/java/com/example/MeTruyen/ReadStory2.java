@@ -12,15 +12,15 @@ import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class ReadStory extends AppCompatActivity {
+public class ReadStory2 extends AppCompatActivity {
     private ImageButton Back;
-    private TextView TenTruyen1;
+    private TextView TenTruyen2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_read_story);
+        setContentView(R.layout.activity_read_story2);
         Back = findViewById(R.id.Back);
-        TenTruyen1 = findViewById(R.id.ViewTenTruyen);
+        TenTruyen2 = findViewById(R.id.ViewTenTruyen2);
         BottomNavigationView bottomNavigationView = findViewById(R.id.Bottom_Navigation);
         bottomNavigationView.setSelectedItemId(R.id.home);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -63,8 +63,8 @@ public class ReadStory extends AppCompatActivity {
             }
         });
 
-        String DataTenTruyen1 = getIntent().getStringExtra("data_TenTruyen1");
-        TenTruyen1.setText(DataTenTruyen1);
+        String DataTenTruyen2 = getIntent().getStringExtra("data_TenTruyen2");
+        TenTruyen2.setText(DataTenTruyen2);
     }
 
     public void openBack(){

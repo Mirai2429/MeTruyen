@@ -10,17 +10,39 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class home extends AppCompatActivity {
+    private static final int MY_REQUEST_CODE = 100;
     private Button Search;
-    private ImageButton Truyen1;
+    private ImageButton Truyen1, Truyen2, Truyen3, Truyen4, Truyen5, Truyen6, Truyen7, Truyen8, Truyen9;
+    private TextView TenTruyen1, TenTruyen2, TenTruyen3, TenTruyen4, TenTruyen5, TenTruyen6, TenTruyen7, TenTruyen8, TenTruyen9;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Search = findViewById(R.id.Search);
         Truyen1 = findViewById(R.id.Truyen1);
+        Truyen2 = findViewById(R.id.Truyen2);
+        Truyen3 = findViewById(R.id.Truyen3);
+        Truyen4 = findViewById(R.id.Truyen4);
+        Truyen5 = findViewById(R.id.Truyen5);
+        Truyen6 = findViewById(R.id.Truyen6);
+        Truyen7 = findViewById(R.id.Truyen7);
+        Truyen8 = findViewById(R.id.Truyen8);
+        Truyen9 = findViewById(R.id.Truyen9);
+
+        TenTruyen1 = findViewById(R.id.TenTruyen1);
+        TenTruyen2 = findViewById(R.id.TenTruyen2);
+        TenTruyen3 = findViewById(R.id.TenTruyen3);
+        TenTruyen4 = findViewById(R.id.TenTruyen4);
+        TenTruyen5 = findViewById(R.id.TenTruyen5);
+        TenTruyen6 = findViewById(R.id.TenTruyen6);
+        TenTruyen7 = findViewById(R.id.TenTruyen7);
+        TenTruyen8 = findViewById(R.id.TenTruyen8);
+        TenTruyen9 = findViewById(R.id.TenTruyen9);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.Bottom_Navigation);
         bottomNavigationView.setSelectedItemId(R.id.home);
@@ -70,18 +92,35 @@ public class home extends AppCompatActivity {
         Truyen1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openTruyen1();
+                String tenTruyen1 = TenTruyen1.getText().toString().trim();
+                openTruyen1(tenTruyen1);
+            }
+        });
+
+        Truyen2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String tenTruyen2 = TenTruyen2.getText().toString().trim();
+                openTruyen2(tenTruyen2);
             }
         });
     }
-    // Mo tim kiem
+
+
     public void openSearch(){
         Intent intent = new Intent(this, timkiem.class);
         startActivity(intent);
     }
-    // Doc truyen
-    public void openTruyen1(){
+
+    public void openTruyen1(String tenTruyen1){
         Intent intent = new Intent(this, ReadStory.class);
-        startActivity(intent);
+        intent.putExtra("data_TenTruyen1", tenTruyen1);
+        startActivityForResult(intent, MY_REQUEST_CODE);
+    }
+
+    public void openTruyen2(String tenTruyen2){
+        Intent intent = new Intent(this, ReadStory2.class);
+        intent.putExtra("data_TenTruyen2", tenTruyen2);
+        startActivityForResult(intent, MY_REQUEST_CODE);
     }
 }
